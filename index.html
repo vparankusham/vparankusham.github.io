@@ -6,30 +6,142 @@
     </head>
     <body>
         <div class= "navbar">
-            <a href="mailto:vaishp@umich.edu">
-                Contact
-            </a>
-       
-            <a href="resume.html">
-                Resume
-            </a>
-
-            <a href="index.html">
-                Home
-            </a> 
+            <div>
+                <a href="mailto:vaishp@umich.edu">
+                    Contact
+                </a>
+           
+                <a href="resume.html">
+                    Resume
+                </a>
+    
+                <a href="index.html">
+                    Home
+                </a> 
+            </div>
             
         </div>
+
         <div class = "info">
-            <img class = "circle" src = "images/profilepic.png">
-            <div class = "about">
-                <h1>Hi! I'm Vaishnavi Parankusham</h1>
-                <p id = "blurb">I’m a senior at the 
-                    <a href = "https://youtu.be/o1B2Gk0kD7c?t=7">University of Michigan - Ann Arbor</a>
-                    and I am pursuing a Bachelor's degree in Computer Science with a minor in Gender & Health. I am currently searching for full-time software engineering positions.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+
+                function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+}
+            </script>
+            <div>
+                <!-- <img class = "me" src = "images/profilepic.png"> -->
+                <div class = "about">
+                    <h1>Hi! I'm Vaishnavi Parankusham</h1>
+                    <p>I’m a senior at the 
+                        <a href = "https://youtu.be/o1B2Gk0kD7c?t=7">University of Michigan - Ann Arbor</a>
+                        and I am pursuing a Bachelor's degree in Computer Science with a minor in Gender & Health. I am currently searching for full-time software engineering positions.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div class = "experiences">
+            <div class = "job">
+                <img src="images/mpowered_logo.png" class="logo">
+                <div class = "desc">
+                    <!-- <b>MPowered Entrepreneurship - </b><i>Consultant</i> -->
+                    <!-- <p> MPOWERED STUFF</p> -->
+                </div>
+            </div>
+
+            <div class = "job">
+                <span><img src="images/mb_logo.png" class="logo"></span>
+                <div class = "desc" style="float: right;">
+                    <!-- <p> MBFS</p> -->
+                </div>
+            </div>
+
+            <div class = "job">
+                <span><img src="images/urop_logo.png" class="logo"></span>
+                <div class = "desc" style="float: right;">
+                    <!-- <p> UROP</p> -->
+                </div>
+            </div>
+ 
+            <div class = "job">
+                <span><img src="images/gtc_logo.png" class="logo"></span>
+                <div class = "desc" style="float: right;">
+                    <!-- <p> GTC</p> -->
+                </div>
             </div>
         </div>
-        <div class = "coursework">
-            <h2> Relevant Coursework</h2>
+        
+
+        <hr>
+        <div class = "extra">
+            <div class = "coursework">
+                <ul> 
+                    <h2> Relevant Coursework</h2>
+                    <li><b>EECS 388</b> Computer Security <i>(In Progress)</i></li>
+                    <li><b>EECS 481</b> Software Engineering <i>(In Progress)</i></li>
+                    <li><b>EECS 376</b> Foundations of Computer Science <i>(In Progress)</i></li>
+                    <li><b>EECS 485</b> Web Systems</li>
+                    <li><b>EECS 281</b> Data Structures and Algorithms</li>
+                    <li><b>EECS 370</b> Computer Organization</li>
+                </ul>
+                <br>
+            </div>
+
+            <!-- <div class="vl"></div>
+
+            <div class = "hobbies">
+                <ul> 
+                    <h2> Hobbies</h2>
+                    <li> I enjoy knitting, baking, reading all sorts of books.</li>
+                </ul>
+                <br> -->
+            </div>
+
+        </div>
+
+        
+        <!-- <div class = "back_up">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll Up</button>
+            <script>
+                //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+            </script>
+        </div> -->
+
+        <br>
+
+        <div class = "footer">
+            <a href="https://github.com/vparankusham"><img class = "social" src = "images/github_logo.png"></a>
+            <a href="www.linkedin.com/in/vaishnavi-parankusham"><img class = "social" src = "images/linkedin_logo.png"></a>
+            <a href="mailto:vaishp@umich.edu"><img class = "social" src = "images/email.png"></a>
         </div>
     </body>
 </html>

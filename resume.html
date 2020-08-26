@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class= "navbar">
-            <a href="contact.html">
+            <a href="mailto:vaishp@umich.edu">
                 Contact
             </a>
        
@@ -19,9 +19,35 @@
             </a> 
             
         </div>
-        <div class = "resume">
-            <h1> Resume </h1>
-            <iframe src = "Vaishnavi_Parankusham_Resume.pdf" title= "Vaishnavi_Parankusham_Resume" width= "1000" height="1200"></iframe>
+        <div>
+            <div class = "info">
+                <div class="progress-container1">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+    
+                    function myFunction() {
+                    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    var scrolled = (winScroll / height) * 100;
+                    document.getElementById("myBar").style.width = scrolled + "%";
+    }
+                </script>
+            </div>
+            <div class = "resume">
+                <h1> Resume </h1>
+                <iframe src = "Vaishnavi_Parankusham_Resume.pdf" title= "Vaishnavi_Parankusham_Resume" width= "1000" height="1200"></iframe>
+            </div>
+        </div>
+        
+
+        <br>
+
+        <div class = "footer">
+            <a href="https://github.com/vparankusham"><img class = "social" src = "images/github_logo.png"></a>
+            <a href="www.linkedin.com/in/vaishnavi-parankusham"><img class = "social" src = "images/linkedin_logo.png"></a>
+            <a href="mailto:vaishp@umich.edu"><img class = "social" src = "images/email.png"></a>
         </div>
     </body>
 </html>
